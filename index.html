@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Car rent</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <section class="app">
+    </section>
+
+    <script type="text/template" class="car-search">
+			<h1>Search form</h1>
+			<input class="pick-up-location" placeholder="" autofocus>
+      <input class="pick-up-date-time" placeholder="">
+      <input class="return-date-time" placeholder="">
+      <select class="car-type">
+        <option value=""></option>
+        <option value="sedan">Sedan</option>
+        <option value="off-road">Off-road</option>
+      </select>
+      <input type="submit" class="submit">
+		</script>
+
+    <script type="text/template" class="car">
+      <header>
+        <h1 class="car-model"></h1>
+      </header>
+      <img src="" class="car-image">
+      <div class="car-description">
+      </div>
+      <div class="car-price">
+      </div>
+    </script>
+
+    <script type="text/template" class="car-search-page">
+      <section class="car-search">
+      </section>
+      <section class="car-search-results-wrapper">
+        <header>
+          <h1 class="car-found-num"></h1>
+        </header>
+        <div class="car-search-results"></div>
+      </section>
+    </script>
+
+    <script src="lib/jquery-3.1.0.js"></script>
+    <script src="lib/underscore.js"></script>
+    <script src="lib/backbone.js"></script>
+
+    <script src="src/models/car.js"></script>
+    <script src="src/collection/cars.js"></script>
+    <script src="src/models/car_search.js"></script>
+    <script src="src/models/car_search_page.js"></script>
+    <script src="src/views/car_search_view.js"></script>
+    <script src="src/views/car_view.js"></script>
+    <script src="src/views/car_search_page_view.js"></script>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
